@@ -1,0 +1,11 @@
+import pandas as pd
+
+URL = (
+    "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/"
+    "prix-des-carburants-en-france-flux-instantane-v2/exports/csv"
+)
+
+df = pd.read_csv(URL, sep=";")
+print(df.shape)
+print(df.columns.tolist())
+print(df.head())
