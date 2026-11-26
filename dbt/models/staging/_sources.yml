@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: fuel_prices
+        description: "Flux instantané des prix des carburants, chargé tel quel (toutes les colonnes en texte)."
+      - name: loaded_files
+        description: "Suivi des fichiers bruts déjà chargés."
